@@ -11116,6 +11116,9 @@ CSS
 *********/
 html, body {
   height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #all {
@@ -11169,12 +11172,16 @@ pre {
   padding: 4vh;
 }
 
-#header {
-  background: linear-gradient(-45deg, #FF9A9D, #AED6DC, #4A536B);
-  background-size: 400% 400%;
-  -webkit-animation: gradient 15s ease infinite;
-          animation: gradient 15s ease infinite;
-  position: relative;
+.jumbotron {
+  background-image: url(../img/bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+.jumbotron::before {
+  opacity: 0.75;
 }
 
 @-webkit-keyframes gradient {
